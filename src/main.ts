@@ -1,5 +1,4 @@
 import './style.css'
-import { setupCounter } from './counter.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -7,5 +6,3 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <span>offline</span>
   </div>
 `
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
