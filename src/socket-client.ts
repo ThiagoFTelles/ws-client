@@ -2,7 +2,7 @@ import { Manager, Socket } from 'socket.io-client'
 
 let socket: Socket
 
-export const connetToServer = ( token: string ) => {
+export const connectToServer = ( token: string ) => {
     const manager = new Manager('http://localhost:3000/socket.io/socket.io.js', {
         extraHeaders: {
             hola: 'mundo',

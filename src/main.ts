@@ -1,4 +1,4 @@
-import { connetToServer } from './socket-client'
+import { connectToServer } from './socket-client'
 import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -21,5 +21,5 @@ const btnConnect = document.querySelector<HTMLButtonElement>('#btn-connect')!
 
 btnConnect.addEventListener('click', () => {
   if( jwtToken.value.trim().length <= 0 ) return alert('Enter a valid JWT')
-  connetToServer( jwtToken.value.trim() )
+  connectToServer( jwtToken.value.trim() )
 })
